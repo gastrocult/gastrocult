@@ -16,7 +16,7 @@ header {
   height: 100vh;
   width: 100%;
   color: white;
-  font-famly: helvetica;
+  font-famly: helvetica, sans-serif;
   font-style: italic;
   font-size: 7vw;
   background: lightcoral;
