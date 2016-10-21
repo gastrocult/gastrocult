@@ -37,6 +37,6 @@ var replaceContent = function replaceContent(e) {
 
 contentText.innerHTML = pages.about;
 
-for (page in pages) {
+for (var page in pages) {
   document.querySelector('.' + page).addEventListener('click', replaceContent);
 };
