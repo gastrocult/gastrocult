@@ -1,0 +1,50 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(45deg, #e3e3e3, #dadada, #D8D8D8);
+}
+.contentWrapper {
+  max-width: 100vw;
+  display: inline-flex;
+  justify-content: space-between;
+  padding: 6vh 0;
+}
+img {
+  max-width: 70vw;
+  width: 100%;
+}
+p {
+  font-family: "avenir neu", "avenir", "helvetica", "ariel", "sans-serif";
+  text-align: justify;
+  line-height: 1.5;
+}
+header.layout {
+  max-width: 35vw;
+  margin: 0 4vw;
+}
+footer.layout {
+  display:flex;
+  align-items: baseline;
+  height: 100vh;
+  margin-right: 4vw;
+}
+.centerCTA {
+  text-align: center;
+}
+a.cta {
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "avenir neu", "avenir", "helvetica", "ariel", "sans-serif";
+  border: 1px solid black;
+  padding: .5em 1em;
+  color: black;
+  font-weight: bold;
+}
+a.cta:hover {
+  background: #ccc;
+}
