@@ -7,7 +7,7 @@ body {
 }
 .contentWrapper {
   max-width: 100vw;
-  display: inline-flex;
+  display: flex;
   justify-content: space-between;
   padding: 6vh 0;
 }
@@ -23,12 +23,14 @@ p {
 header.layout {
   max-width: 35vw;
   margin: 0 4vw;
+  order: 2;
 }
 footer.layout {
   display:flex;
   align-items: baseline;
   height: 100vh;
   margin-right: 4vw;
+  order: 3;
 }
 .centerCTA {
   text-align: center;
@@ -47,4 +49,20 @@ a.cta {
 }
 a.cta:hover {
   background: #ccc;
+}
+
+@media screen and (max-width: 1000px) {
+  .contentWrapper {
+    flex-direction: column;
+    padding: 1vh;
+  }
+  footer.layout {
+    order: 1;
+    height: auto;
+    text-align: center;
+  }
+  .layout {
+    max-width: 100% !important
+  }
+
 }
